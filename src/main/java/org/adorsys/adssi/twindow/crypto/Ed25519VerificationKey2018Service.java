@@ -32,7 +32,11 @@ public class Ed25519VerificationKey2018Service {
     }
 
     public static List<OctetKeyPair> keyPairs(int qty, String did) {
-        return ed25519.keyPairs(qty, did, "#key-Ed25519-");
+        return keyPairs(qty, 0, did);
+    }
+
+    public static List<OctetKeyPair> keyPairs(int qty, int startIndex, String did) {
+        return ed25519.keyPairs(qty, startIndex, did, "#key-Ed25519-");
     }
 
     public static List<Ed25519VerificationKey2018> keyEntries(List<OctetKeyPair> keys, String controller) {
