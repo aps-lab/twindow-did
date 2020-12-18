@@ -38,10 +38,10 @@ public class Common25519Service {
         return new OctetKeyPair.Builder(curve, x).keyID(keyID).keyUse(keyUse).build();
     }
 
-    public List<OctetKeyPair> keyPairs(int qty, String did, String prefix) {
+    public List<OctetKeyPair> keyPairs(int qty, int startIndex, String did, String prefix) {
         List<OctetKeyPair> result = new ArrayList<>();
         for (int i = 0; i < qty; i++) {
-            result.add(genKeyPair(did + prefix + i));
+            result.add(genKeyPair(did + prefix + (i + startIndex)));
         }
         return result;
     }

@@ -34,7 +34,11 @@ public class X25519KeyAgreementKey2019Service {
     }
 
     public static List<OctetKeyPair> keyPairs(int qty, String did) {
-        return x25519.keyPairs(qty, did, "#key-X25519-");
+        return keyPairs(qty, 0, did);
+    }
+
+    public static List<OctetKeyPair> keyPairs(int qty, int startIndex, String did) {
+        return x25519.keyPairs(qty, startIndex, did, "#key-X25519-");
     }
 
     public static List<X25519KeyAgreementKey2019> keyEntries(List<OctetKeyPair> keys, String controller) {
