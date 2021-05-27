@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.plooh.adssi</groupId>
 	<artifactId>twindow-did</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>twindow-did</name>
 	<description>Twindow DID</description>
 	<packaging>jar</packaging>
@@ -28,7 +28,7 @@
 		<connection>scm:git:git://github.com/aps-lab/twindow-did.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/aps-lab/twindow-did.git</developerConnection>
 		<url>https://github.com/aps-lab/twindow-did</url>
-		<tag>twindow-did-0.0.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
